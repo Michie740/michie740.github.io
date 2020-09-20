@@ -1,5 +1,21 @@
+header{
+    /* display: block; */
+    padding: 40px;
+    background-color: rgb(252, 169, 183);
+    text-align: center;
+    color: black;
+}
+
+
+.firstpagebody{
+    background-color: white;
+}
+
+.button{
+    background: white;;
+}
 body{
-    background-color: #d2d2d2; 
+    background-color: #f1f0f0; 
     color: #7d7f7c	;
     font-family: sans-serif;
 }
@@ -15,13 +31,15 @@ body{
     margin-right: auto;
 }
 
-h2, h1{
+h2, h1, h5{
     text-align: center;
 }
-h5{
+
+
+h4, h5{
     margin-top: -5px;
-    text-align: center; 
 }
+
 
 a{
     background-color: rgb(252, 169, 183);
@@ -30,6 +48,8 @@ a{
     padding-bottom: 5px;
     padding-right: 10px;
     padding-left: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
     border-radius: 20px;
     text-decoration: none; 
 }
@@ -42,6 +62,13 @@ a:active{
     background-color: #e75480; 
 }
 
+.readmore{
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: underline;
+}
 
 figure{
     position: relative;
@@ -70,4 +97,20 @@ figure:hover figcaption{
 
 td:hover figcaption{
     display:block;
+}
+
+aside{
+    width: 20%;
+    display: block;
+    float: right;
+    font-size: x-small;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+footer{
+    font-size: xx-small;
+    text-align: right;
+
 }
