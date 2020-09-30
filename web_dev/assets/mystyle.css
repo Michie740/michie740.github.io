@@ -1,23 +1,35 @@
+@font-face{
+    font-family: Bebas;
+    src: url(BebasNeue-Regular.ttf);
+}
+
+*{
+    font-family: Bebas;
+}
+
 header{
     /* display: block; */
     padding: 40px;
-    background-color: rgb(252, 169, 183);
+    background-color: #F6921E;
+    border: 2px solid #BF1363;
     text-align: center;
     color: black;
 }
 
+body{
+    background-color: #ffe3c8; 
+    color: #191923	;
+    font-family: sans-serif;
+}
+
 
 .firstpagebody{
-    background-color: white;
-}
-
-.button{
-    background: white;;
-}
-body{
-    background-color: #f1f0f0; 
-    color: #7d7f7c	;
-    font-family: sans-serif;
+    margin-top: 20px;
+    background-color: #BF1363;
+    padding: 10px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .center{
@@ -27,7 +39,7 @@ body{
 }
 
 .tcenter{
-        margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -40,26 +52,22 @@ h4, h5{
     margin-top: -5px;
 }
 
+.options{
+    background-color: #ffe3c8;
+    border: 2px solid #F6921E;
+    padding: 10px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
 
-a{
-    background-color: rgb(252, 169, 183);
+.options a{
     color: black;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-right: 2px;
-    margin-left: 2px;
-    border-radius: 20px;
     text-decoration: none; 
 }
 
-a:hover{
-    background-color: rgb(255, 198, 228);
-}
-
-a:active{
-    background-color: #e75480; 
+.center{
+    text-align: center;
 }
 
 .readmore{
@@ -78,7 +86,6 @@ figure{
     border-radius: 50px;
     border-style: solid;
     border-color: black;
-
 }
 
 figcaption{
