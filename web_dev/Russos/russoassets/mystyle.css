@@ -1,0 +1,239 @@
+@font-face{
+    font-family: Bebas;
+    src: url(../russoassets/BebasNeue-Regular.ttf);
+}
+
+*{
+    font-family: Bebas;
+}
+body{
+    background-color: #0A5266;
+}
+
+header{
+    background-color: #15696F;
+    border: 2px solid #F6921E;
+    color: black;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+}
+
+header .h2{
+    font-size: xx-large;
+}
+
+.allmovies {
+    width: 100%;
+    overflow: scroll!important;
+}
+
+.navigation {
+    text-align: center;
+    margin: 10px 0 0 ;
+    padding: 10px 0;
+    background-color: #F6921E;
+    margin-bottom: 10px;
+    border: 2px solid #15696F;
+}
+
+
+.navigation ul{
+    /* list-style: none; */
+    margin: 0 2px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation  li {
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.navigation  a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: normal;
+    padding: 15px 55px;
+}
+
+.navigation a:hover{
+    background-color: #15696F;
+}
+
+#biopagenav, #workspagenav{
+    /* position: fixed; */
+    background-color: #15696F;
+    border: 2px solid #F6921E;
+    display: block;
+    float: left;
+    width: 12%;
+
+}
+
+#workspagenav ul{
+    list-style: none!important;
+    margin-left: -35px;
+}
+
+.dots{
+    list-style: none;
+    margin-left: -35px;
+}
+
+.dots a{
+    text-decoration: none;
+}
+
+
+#workspagenav a{
+    text-decoration: none;
+}
+
+
+.bodybody{
+    background-color: #15696F;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.sticky{
+    position: fixed;
+    top: 10px;
+    width: 100%;
+}
+
+.sticky + .bodybody{
+    padding-top: 60px;
+}
+
+.sources, #sourcelist, #growingup, #startingout, #bigbreak, #postmarvel, #pre2014, #Marvel, #post2014, #directingstyle{
+    background-color: white;
+    border: 2px solid #F6921E;
+}
+
+.actualbio{
+    padding: 10px;
+}
+
+#growingup, #startingout, #bigbreak, #pre2014, #Marvel, #post2014{
+    margin-bottom: 20px;
+}
+
+.actualbio h2{
+    text-align: center;
+}
+
+
+.bio, .worksandsources{
+    display: flex;
+    margin: 10px;
+}
+
+.biotext{
+    background-color: white;
+    border: 2px solid #F6921E;
+    flex: 0 0 65%;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.works{
+    background-color: white;
+    border: 2px solid #F6921E;
+    flex: 0 0 65%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.direct{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    /* width: 50%; */
+}
+
+.sources{
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.biopic{
+    flex: 1;
+}
+
+#anthony, #joe{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+
+}
+
+.movies{
+    display: inline;
+}
+
+p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+img{
+    max-width: 100%;
+    /* width: auto; */
+}
+
+figure{
+    text-align: center;
+    font-size: small;
+
+}
+
+
+
+.link{
+    text-align: center;
+}
+
+a{
+    color: black;
+}
+
+.backtotop{
+    float: right;
+    margin-right: 5px;
+    margin-top: -30px;
+}
+
+.backtotop a{
+    text-decoration: none;
+}
+
+#directingstyle iframe{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: auto;
+    display: block;
+}
+
+#directingstyle p{
+    text-align: center;
+}
+
+footer{
+    background-color: #15696F;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 2px solid #F6921E;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+}
