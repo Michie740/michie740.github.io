@@ -1,0 +1,104 @@
+@font-face{
+    font-family: Bebas;
+    src: url(BebasNeue-Regular.ttf);
+}
+
+*{
+    font-family: Bebas;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+}
+
+header{
+    /* display: block; */
+    padding: 20px;
+    background-color: black;
+    border: 2px solid gray;
+    text-align: center;
+    color: white;
+}
+
+.allpoems{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.newpoem a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    padding-right: 20%;
+    padding-left: 20%;
+    font-size: x-large;
+
+}
+
+
+div .newpoem{
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    border: 1px solid white;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.newpoem:hover{
+    opacity: .9;
+}
+
+.text{
+    position: relative;
+    font-size: larger;
+    opacity: .7;
+    z-index: 2;
+}
+
+/* .text:hover{
+    opacity: 1;
+} */
+
+#battle{
+    justify-content: flex-start;
+    background-image: url(https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTcxNTQ5OTYwMzUxODUyMTk0%2Fbattle-of-chattanooga-gettyimages-513682009.jpg);
+}
+
+
+#tobe{
+    justify-content: flex-end;
+    background-image: url(https://www.carbonbrief.org/wp-content/uploads/2020/06/yawning-lion-south-africa-1550x804.jpg);
+}
+
+#fridge{
+    justify-content: flex-start;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/61tGvBnQW9L._AC_SX522_.jpg);
+}
+
+#golden{
+    justify-content: flex-end;
+    background-image: url(https://s3.amazonaws.com/pbblogassets/uploads/2015/09/Golden-Hour-Woods.jpg);
+}
+
+#fight{
+    justify-content: flex-start;
+    background-image: url(https://kids.nationalgeographic.com/content/dam/kids/photos/articles/Nature/H-P/Habitats/Ocean/wave.ngsversion.1500050062134.adapt.1900.1.jpg);
+}
+
+#dietoday{
+    justify-content: flex-end;
+    background-image: url(https://media.tegna-media.com/assets/CCT/images/8bc60c03-2b7e-4343-92ef-8dbecc4880ac/8bc60c03-2b7e-4343-92ef-8dbecc4880ac_1140x641.jpg)
+}
+
+#hanahaki{
+    justify-content: flex-start;
+    background-image: url(https://wallup.net/wp-content/uploads/2016/01/78397-flowers-pink_flowers-blurred.jpg);
+}
+
