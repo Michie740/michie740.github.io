@@ -1,4 +1,121 @@
+@font-face{
+    font-family: Bebas;
+    src: url(BebasNeue-Regular.ttf);
+}
+
+*{
+    font-family: Bebas;
+}
+
 body, html{
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    background-image: url(https://preview.redd.it/9rk9xlzf1bw31.jpg?width=1318&format=pjpg&auto=webp&s=57bdd6dce65c6ffcb82903134545e3dd62dd206f);
+    height: 150px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: .7;
+}
+
+.firstwords{
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+
+}
+
+
+/* .tcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+
+img{
+    display: none; 
+}
+
+.fly:hover img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pizza:hover img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaves:hover img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.spotlight:hover img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.west:hover img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbutton{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: x-large;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
