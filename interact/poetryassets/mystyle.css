@@ -21,6 +21,12 @@ header{
     color: white;
 }
 
+header a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}
 .allpoems{
     display: flex;
     flex-direction: column;
