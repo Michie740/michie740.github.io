@@ -1,10 +1,7 @@
-@font-face{
-    font-family: Bebas;
-    src: url(BebasNeue-Regular.ttf);
-}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 *{
-    font-family: Bebas;
+    font-family: Raleway;
 }
 
 body, html{
@@ -35,71 +32,69 @@ header{
     justify-content: center;
     align-items: center;
     font-size: xx-large;
+    font-weight: bold;
     color: white;
-
 }
 
 
-/* .tcenter{
+.links{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
-
+    justify-content: space-between;
+}
 
 img{
     display: none; 
 }
 
-.fly:hover img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* .end img{
+    display: inline-grid;
+    justify-content: end;
+    width: 10%;
 }
 
+.start img{
+    display: inline-grid;
+    justify-content: end;
+    width: 10%;
+} */
+
+.fly:hover img{
+    display: flex;
+}
 
 .pizza:hover img{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .leaves:hover img{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
 .spotlight:hover img{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .box:hover img{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .west:hover img{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .end{
     display: flex;
     justify-content: flex-end;
 }
+
 
 .navbutton{
     display: flex;
