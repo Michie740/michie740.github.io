@@ -27,11 +27,10 @@ header a{
     display: flex;
     justify-content: flex-start;
 }
+
 .allpoems{
     display: flex;
     flex-direction: column;
-
-
 }
 
 .newpoem a{
@@ -42,7 +41,6 @@ header a{
     padding-right: 20%;
     padding-left: 20%;
     font-size: x-large;
-
 }
 
 
@@ -130,3 +128,4 @@ div .newpoem{
     color: black;
     opacity: 1;
 }
+
