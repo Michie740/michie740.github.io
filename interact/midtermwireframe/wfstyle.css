@@ -188,11 +188,11 @@ footer h4{
     border: 1px solid black;
 }
 
-#sunpath .sky:hover{
+/* #sunpath .sky:hover{
     background-color: rgb(173, 134, 6);
     color: white;
     opacity: .9;
-}
+} */
 
 #sunpath .sky:active{
     background-color: gray;
