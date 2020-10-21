@@ -171,7 +171,7 @@ footer h4{
     flex-direction: column;
     text-decoration: none;
     color: black;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
 }
 
@@ -267,6 +267,7 @@ footer h4{
     margin-top: auto;
     margin-bottom: auto;
     font-weight: bold;
+    font-size: large;
 }
 
 .sides{
@@ -308,6 +309,9 @@ footer h4{
     width: 20%;
 }
 
+.reflect{
+    transform: scaleX(-1);
+}
 .specialverse{
     display: grid;
     grid-template-rows: 25% 50% 25%;
@@ -356,7 +360,7 @@ footer h4{
     0%{
         opacity: 1;
         background-image: url(https://img1.picmix.com/output/stamp/normal/1/9/9/7/1317991_706cd.gif);
-        background-position: cover;
+        background-size: cover;
     }
     50%{
         opacity: 0;
@@ -368,5 +372,17 @@ footer h4{
 }
 
 
+.crawl img{
+    width: 20%;
+}
 
+.crawl:hover img{
+    animation: bye 2s forwards;
+}
+
+@keyframes bye{
+    0%{opacity: 100%;}
+    100%{opacity: 0%;}
+
+}
 
