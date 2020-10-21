@@ -20,7 +20,10 @@ header{
     background-color: black;
     /* border: 2px solid gray; */
     text-align: center;
-    color: white;
+}
+
+.black{
+    color: white!important;
 }
 
 header a{
@@ -136,6 +139,12 @@ header a{
     font-family: 'Dancing Script';
 }
 
+#more{
+    background-image: url(https://www.sciencenews.org/wp-content/uploads/2019/09/090519_mt_templescroll_feat.jpg);
+    background-size: cover;
+    font-family: 'Rokkitt';
+}
+
 footer{
     background-color: black;
     color: white;
@@ -229,6 +238,10 @@ footer h4{
     align-items: center;
 }
 
+.suncenter a{
+    text-decoration: none;
+    color: black;
+}
 
 
 #sunart{
@@ -261,7 +274,10 @@ footer h4{
     background: var(--thesun);
 }
 
-
+.flowers{
+    background-color: rgba(255, 192, 203, 0.164);
+    margin-top: -2vh;
+}
 .actual{
     animation: bloom 1s;
     margin-top: auto;
@@ -278,7 +294,7 @@ footer h4{
 }
 
 .sides img{
-    width: 50%;
+    width: 40%;
     animation: bloom 4s;
 }
 
@@ -301,11 +317,8 @@ footer h4{
     justify-content: center;
 }
 
-.verse img{
-    width: 100%;
-}
 
-.pointy img, .cri img{
+.pointy img, .cri img, .secrets img{
     width: 20%;
 }
 
