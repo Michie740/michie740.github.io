@@ -106,6 +106,14 @@ header a{
     }
 }
 
+@media only screen and (max-width: 500px){
+    .links{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
 @media only screen and (max-height: 100px){
     .container{
         padding-bottom: 80px;
@@ -168,6 +176,7 @@ header a{
     background-image: url(https://cfh.iaamuseum.org/wp-content/uploads/2017/07/Old-Handwritten-Documents-Recolored.jpg);
     background-size: cover;
     font-family: 'Roboto Mono';
+    font-size: x-small;
 }
 
 .morepage{
@@ -182,18 +191,43 @@ header a{
 }
 
 footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
     color: white;
     border: 2px solid gray;
 }
 
 
-footer h4{
+footer .me{
+    display: flex;
+    align-items: flex-end;
     text-align: right;
     font-size: x-small; 
-
 }
 
+footer .socials{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+  
+  /* Set a specific color for each brand */
+  
 .diepage{
     font-family: 'Amatic SC';
     font-weight: bold;
@@ -225,6 +259,8 @@ footer h4{
     justify-content: space-evenly;
     
 }
+
+
 
 .goldenhrpage{
     font-family: 'Shadows Into Light';
