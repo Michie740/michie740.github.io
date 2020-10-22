@@ -65,7 +65,7 @@ header a{
 #nav2{
     display: flex;
     justify-content: space-around;
-    background-color: rgba(210, 180, 140, 0);
+    background-color: rgba(255, 248, 240, 0.884);
 }
 
 #nav2 a{
@@ -173,7 +173,7 @@ header a{
 .morepage{
     font-family: 'Roboto Mono';
     font-size: small;
-    background-color: rgba(210, 180, 140, 0.171);
+    background-color: rgb(255, 248, 240);
 
 }
 
