@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Rokkitt:wght@800&family=Amatic+SC&family=Shadows+Into+Light&family=Dancing+Script&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rokkitt:wght@800&family=Amatic+SC&family=Shadows+Into+Light&family=Dancing+Script&display=swap);
 
 html,body {
     margin:0;
@@ -59,6 +59,31 @@ header a{
 .navigation a:hover{
     background-color: white;
     color: black;
+    transition: 0.5s;
+}
+
+#nav2{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(210, 180, 140, 0);
+}
+
+#nav2 a{
+    width: 100%;
+}
+
+.content {
+    padding: 16px;
+}
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + .content {
+    padding-top: 60px;
 }
 
 
@@ -140,9 +165,20 @@ header a{
 }
 
 #more{
-    background-image: url(https://www.sciencenews.org/wp-content/uploads/2019/09/090519_mt_templescroll_feat.jpg);
+    background-image: url(https://cfh.iaamuseum.org/wp-content/uploads/2017/07/Old-Handwritten-Documents-Recolored.jpg);
     background-size: cover;
-    font-family: 'Rokkitt';
+    font-family: 'Roboto Mono';
+}
+
+.morepage{
+    font-family: 'Roboto Mono';
+    font-size: small;
+    background-color: rgba(210, 180, 140, 0.171);
+
+}
+
+.morepage b{
+    font-size: medium;
 }
 
 footer{
@@ -184,6 +220,12 @@ footer h4{
     font-weight: bold;
 }
 
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
 .goldenhrpage{
     font-family: 'Shadows Into Light';
 }
@@ -195,14 +237,10 @@ footer h4{
     grid-template-rows: 1/3 1/3 1/3;
     grid-row-gap: 1vh;
     text-align: center;
+    color: black;
+    font-size: medium;
 }
 
-.sun .watch{
-    text-decoration: none;
-    color: gold;
-    font-weight: bold;
-    font-size: large;
-}
 
 #sunpath #blue:hover{
     animation: turnblue 1s ease-in forwards;
@@ -261,6 +299,7 @@ footer h4{
     --thesky: lightgoldenrodyellow;
     --thesun: gold;
     --cloud: rgb(255, 217, 222);
+    transition: 0.5s;
 }
 .sunsky {
     background: var(--thesky);
@@ -279,7 +318,7 @@ footer h4{
     margin-top: -2vh;
 }
 .actual{
-    animation: bloom 1s;
+    animation: bloom 1s ease-in;
     margin-top: auto;
     margin-bottom: auto;
     font-weight: bold;
@@ -295,7 +334,7 @@ footer h4{
 
 .sides img{
     width: 40%;
-    animation: bloom 4s;
+    animation: bloom ease-in 4s;
 }
 
 @keyframes bloom{
@@ -384,18 +423,87 @@ footer h4{
     }
 }
 
+.leave{
+    animation: bye 15s forwards;
+}
+
+@keyframes bye{
+    0%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.call{
+    animation: hi 15s forwards;
+}
+
+@keyframes hi{
+    0%{
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 .crawl img{
     width: 20%;
 }
 
 .crawl:hover img{
-    animation: bye 2s forwards;
+    animation: lol 2s forwards;
 }
 
-@keyframes bye{
+@keyframes lol{
     0%{opacity: 100%;}
     100%{opacity: 0%;}
 
+}
+
+hr{
+    height: 1px;
+    border: 0;
+    color: #333;
+    background-color: #333;
+    width: 80%;
+}
+
+#dielol{
+    background-color: rgba(173, 216, 230, 0.219);
+}
+.upwater{
+    display: flex;
+    justify-content: center;
+    width: 100%; height: 100%;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, rgba(20, 109, 168, 0.486) 50%, transparent 50%);
+    animation: rise 2s ease-in forwards;
+}
+
+@keyframes rise{
+    from{background-position: 0 0%;}
+    to{background-position: 0 100%}
+}
+
+.downwater{
+    display: flex;
+    justify-content: center;
+    width: 100%; height: 100%;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, rgba(20, 109, 168, 0.486) 50%, transparent 50%);
+    animation: sink 3.5s ease-out forwards;
+}
+
+@keyframes sink{
+    from{background-position: 0 100%;}
+    to{background-position: 0 0%}
 }
 
