@@ -94,7 +94,7 @@ header a{
     height: 90vh;
     background-color:#fff;
     display:grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-row: auto auto;
 }
 
