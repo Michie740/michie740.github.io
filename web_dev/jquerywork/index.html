@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Build A Bear!</title>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="programming.js" ></script>
+        <script>
+            $( function() {
+              $( "#tabs" ).tabs();
+            } );
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Build-A-Bear</h1>
+            <h4>Nathan and Michie's Ver.</h4>
+        </header>
+
+      
+        <div class = "content">
+            
+            <div class = "bearbackground">
+            <div class = "bear">
+                <div class = "bearaccessories">
+                    <div class = "realwatch">
+                        <img src = "bearwatch.png">
+                    </div>
+                    <div class = "realnecklace">
+                        <img src = "bearnecklace.png">
+                    </div>
+                    <div class = "realsneakers">
+                        <img src = "bearsneakers.png">
+                    </div>
+                </div>
+                <div class = "R-ear"></div>
+                <div class = "L-ear"></div>
+                <div class = "face">
+                    <div class = "R-eye"></div>
+                    <div class = "L-eye"></div>
+                    <div class = "snoot">
+                        <div class = "nose"></div>
+                    </div>
+                </div>
+                <div class = "body"></div>
+                <div class = "R-arm">
+                    <div class = "inner"></div>
+                    <div class = "outer"></div>
+                </div>
+                <div class = "L-arm">
+                    <div class = "inner"></div>
+                    <div class = "outer"></div>
+                </div>
+                <div class = "R-leg">
+                    <div class = "foot"></div>
+                </div>
+                <div class = "L-leg">
+                    <div class = "foot"></div>
+                </div>
+            </div> 
+            </div>
+            <div class = "customize">
+                <!-- from jq documentation -->
+                <div id = "tabs">
+                    <ul class = "list">
+                        <li>                           
+                            <a href = "#tabs-1">
+                                <button id = "size">size</button>
+                            </a>                           
+                        </li>
+                        <li>
+                            <a href = "#tabs-2">
+                                <button id = "color">color</button>
+                            </a>  
+                        </li>
+                        <li>
+                            <a href = "#tabs-3">
+                                <button id = "clothing">clothing</button>
+                            </a>  
+                        </li>
+                        <li>
+                            <a href = "#tabs-4">
+                                <button id = "accessories">accessories</button>
+                            </a>  
+                        </li>
+                    </ul>
+                    <div id = "tabs-1">
+                        <div class = "custom">
+                            <p class = "reg">Regular</p>
+                            <p class = "extra">Extra Stuffed</p>
+                        </div>
+
+                    </div>
+                    <div id= "tabs-2">
+                        <div class = "custom">
+                            <!-- <p> Will Reset Clothes </p> -->
+                            <p class = "brown">Brown</p>
+                            <p class = "pink">Pink</p>
+                            <p class = "white">White</p>
+                            <p class = "black">Black</p>
+                            <p class = "blue">Blue</p>
+                        </div>
+
+                    </div>
+                    <div id= "tabs-3">
+                        <div class = "custom">
+                            <p class = "outfit1">White T-Shirt and Blue Pants</p>
+                            <p class = "outfit2">Red T-Shirt and Black Pants</p>
+                            <p class = "outfit3">Blue T-Shirt and White Pants</p>
+                            <p class = "outfit4">None</p>
+                        </div>
+                    </div>
+                    <div id= "tabs-4">
+                        <div class = "custom">
+                            <p class = "watch">Watch</p>
+                            <p class = "sneakers">Sneakers</p>
+                            <p class = "necklace">Necklace</p>
+                            <p class = "noaccessories">None</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </body>
+
+    <body>    
+
+
+            
+        </div>
+    </body>
+
+</html>
