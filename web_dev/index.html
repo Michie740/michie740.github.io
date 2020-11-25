@@ -3,31 +3,111 @@
     <meta charset="utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <head>
-        <title> Intro To Web Dev </title>
-        <link rel="stylesheet" href="assets/mystyle.css">
+        <title> Web Dev </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .navbar {
+              margin-bottom: 0;
+              border-radius: 0;
+            }
+            
+            a{
+                color: black;
+            }
+
+            footer {
+              background-color: #f2f2f2;
+              padding: 25px;
+            }
+          </style>
     </head>
+
     <body>
-        <header>
-            <h1> Intro to Web Dev </h1>
-        </header>
-        <div class = "firstpagebody">
-            <div class= "options">
-                <div class = center>
-                    <h2> Links </h2>
-                    <a href = "ways_response/"> Response to Ways of Seeing </a>
-                    <br>
-                    <a href = "lee_response/"> Response to Tim Berners Lee </a>
-                    <br>
-                    <a href = "Russos/"> Meet The Russos </a>
-                    <br>
-                    <a href = "mcluhan_response/"> Response to Medium is the Message </a>
-                    <br>
-                    <a href = "jquerywork/"> Build A Bear Workshop </a>
+
+        <nav class="navbar navbar-inverse container-fluid" >
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Web Dev</a>
+            </div>
+        </nav>
+        
+        <div class="jumbotron">
+          <div class="container text-center">
+            <h1>My Web Dev Work</h1>      
+            <p>Fall 2020</p>
+          </div>
+        </div>
+          
+        <div class="container-fluid bg-3 text-center">    
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href = "ways_response/">
+                    <img src= "assets/ways.png" class="img-responsive" style="width:100%" alt="Ways of Seeing Response">
+                    <p> Response to Ways of Seeing </a> <br> [9.9.2020] </p>
+                </div>
+                <div class="col-sm-4"> 
+                    <a href = "lee_response/">
+                        <img src="assets/lee.png" class="img-responsive" style="width:100%" alt="Tim Berners Lee Response">
+                        <p> Response to Tim Berners Lee </a> <br> [9.14.2020] </p>
+                </div>
+                <div class="col-sm-4"> 
+                    <a href = "Russos/">
+                        <img src="assets/russo.png" class="img-responsive" style="width:100%" alt="Introducing the Russo Brothers">
+                        <p>Meet The Russos </a> <br> [9.28.2020] </p>
                 </div>
             </div>
         </div>
-        <footer>
-            Michelle Yang 2020
+        <br>
+        <div class="container-fluid bg-3 text-center">    
+            <div class="row">
+                <div class="col-sm-4"> 
+                    <a href = "../interact/squirrel/">
+                        <img src="assets/battle.png" class="img-responsive" style="width:100%" alt="Squirrel Poem">
+                        <p>First Interactive Art (Using CSS) </a> <br> [10.7.2020] </p>
+                    </a>
+                </div>
+                <div class="col-sm-4"> 
+                    <a href = "../interact/">
+                        <img src="assets/poetry.png" class="img-responsive" style="width:100%" alt="A Lot of Poetry">
+                        <p> Poetry (Midterm) </a> <br> [10.28.2020] </p>
+                    </a>
+                </div>
+                <div class="col-sm-4"> 
+                    <a href = "https://ns4185.github.io/button/index.html">
+                        <img src="assets/soundboard.png" class="img-responsive" style="width:100%" alt="Soundboard">
+                        <p>Soundboard (Intro to JS pt. 1) </a> <br> [11.2.2020] </p>
+                    </a>
+                </div>
+            </div>
+        </div><br> 
+
+        <div class="container-fluid bg-3 text-center">    
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href = "mcluhan_response/">
+                        <img src="assets/mcluhan.png" class="img-responsive" style="width:100%" alt="Response to Medium is the Message">
+                        <p>Response to Medium is the Message (Intro to JS pt. 2) </a> <br> [11.11.2020]</p>
+                    </a>
+                </div>
+                <div class="col-sm-4"> 
+                    <a href = "jquerywork/">
+                        <img src="assets/bear.png" class="img-responsive" style="width:100%" alt="Build A Bear Workshop">
+                        <p>Build a Bear Workshop (JQuery Project) </a> <br> [11.23.2020]</p>
+                    </a>
+                </div>
+                <div class="col-sm-4"> 
+                    <a href = "#">
+                        <img src="assets/bs.png" class="img-responsive" style="width:100%" alt="BootStrap">
+                        <p>Web Dev Work (Intro to BootStrap) </a> <br> [11.25.2020]</p>    
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        
+        <footer class="container-fluid text-center">
+            <p>Michelle Yang 2020</p>
         </footer>
 
     </body>

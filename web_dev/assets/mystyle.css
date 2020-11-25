@@ -22,6 +22,12 @@ body{
     font-family: sans-serif;
 }
 
+.navbar a{
+    background-color: pink;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
 
 .firstpagebody{
     margin-top: 20px;
