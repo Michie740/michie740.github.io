@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Raleway";
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: "Raleway";
+    background-color: rgb(72, 185, 255);
+    position: sticky;
+    top: 0;
+}
+
+
+.topbar{
+    color: rgb(252, 241, 241);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: large;
+    padding: 7vh;
+
+}
+
+.links{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.links li{
+    list-style: none;
+}
+
+.links a{
+    color: rgb(252, 241, 241);
+    letter-spacing: 3px;
+    font-size: smaller;
+    text-decoration: none;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(252, 241, 241);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* mobile screens hamburger */
+@media screen and (max-width:650px){
+    body{
+        overflow-x: hidden;
+    }
+    .links{
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 10vh;
+        background-color: rgb(72, 185, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+    nav{
+        justify-content: space-between;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes linkfade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-5px);
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+#intro{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+    border: 1px solid black;
+
+}
+
+#resume{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+#projects{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+#experience{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(72, 185, 255);
+    color: white;
+
+}
+
+
+#contact .me{
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    font-size: x-small; 
+}
+
+#contact .socials{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.assist{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50vh;
+    left: 0px;
+    z-index: 999;
+    
+}
