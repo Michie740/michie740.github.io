@@ -1,71 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/font-mfizz-2.4.1/font-mfizz.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
     <title>Michelle Yang</title>
 </head>
-<body>
-    <nav>
-        <div class = "topbar">
-            <h4>Michelle Yang</h4>
+
+<body class="body">
+    <nav class="mynav">
+        <div class="topbar">
+            <h4 id="top">Michelle Yang</h4>
         </div>
-        <ul class = "links">
-            <li><a href = "#about">About</a></li>
-            <li><a href = "#projects">Projects</a></li>
-            <li><a href = "#experience">Experience</a></li>
-            <li><a href = "activities.html">Activites</a></li>
-            <li><a href = "#contact">Contact</a></li>
+        <ul class="links linksblue">
+            <li id="aboutscroll">About</li>
+            <li id="skillscroll">Skills</li>
+            <li id="exscroll">Experience</li>
+            <li id="projscroll">Projects</li>
+            <li id="contactscroll">Contact</li>
+
         </ul>
-        <div class = "burger">
-            <div class = "line1"></div>
-            <div class = "line2"></div>
-            <div class = "line3"></div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
     </nav>
-    <div class = "content">
-        <div id = "intro">
-            Hi! I'm Michelle. <br>
-            Welcome to my Website! <br>
-            other features: reading accessability (large text) <br>
-            toggle dark mode/ change theme colors
-        </div>
-        <div id ="about">
-            [insert pic here]
-            <p>I am a Computer Science student minoring in Integrated Digital Media.
-                I love to create! </p>
-            <br>
-            [languages I've worked with]
+    <div class="content">
+        <div id="intro">
+            <h2>Hi I'm Michelle</h2>
+            <h4>Welcome to my Website!</h4>
 
         </div>
-
-        <div id ="projects">
-            Projects I've Done 
+    </div>
+    <hr />
+    <div id="allabout">
+        <div class="sect"> <b class="hline"> / </b><b>About</b></div>
+        <div class="moreabout">
             <br>
-            [maybe in a carousel]
-        </div>
-        <div id = "experience">
-            [my experience]
-        </div>
-        <div id ="contact">
-            [maybe add a form]
-            <div class = "socials">
-                <a href="https://github.com/Michie740" class="fa fa-github"></a>
-                <a href="https://www.linkedin.com/in/michelle-y-64b824131/" class="fa fa-linkedin"></a>    
+            <div class="constraint">
+                <div class="hii">
+                    <div class="biglabel edu"><b>Education</b></div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="hiiend">
+                                <div class="mb-0 school biglabel"><b>New York University</b></div>
+                                <div class="flex-shrink-0"><span class="text-primary">9.2018 - 5.2022</span></div>
+
+                            </div>
+                            <div class="subheading mb-3">Tandon School of Engineering</div>
+                            <div class="desc">
+                                <div>Major: Computer Science B.S.</div>
+                                <div>Minor: Integrated Digital Media</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div><i>Coursework</i> </div>
+                            <div class="desc">Object Oriented Programming, Data Structures, Algorithms, Operating Systems
+                            </div>
+                        </div>
+                        <div>
+                            <div><i>Organizations</i> </div>
+                            <div class="desc">
+                                Girls Who Code, STEMinist
+                            </div>
+                        </div>
+                        <div>
+                            <a href="activities.html">Other Activities</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class = "me">
+            <!-- <h2>Languages</h2> -->
+            <div class="mestuff">
+                <div class="me">
+                    <img src="assets/bio.jpg">
+                </div>
+            </div>
+
+        </div>
+        <hr />
+
+
+        <div id="skills">
+            <div class="sect"> <b class="hline"> / </b><b>Skills</b></div>
+            <div class="mb-0 skillset biglabel"><b>Computer Languages</b></div>
+            <div class="lang skillset">
+                <li><i class="icon-cplusplus"></i></li>
+                <li><i class="icon-python"></i></li>
+                <li><i class="icon-c"></i></li>
+                <li><i class="icon-html5"></i></li>
+                <li><i class="icon-css3"></i></li>
+                <li><i class="icon-javascript"></i></li>
+                <!-- <li><i class="icon-unity"></i></li> -->
+            </div>
+            <div class="mb-0 skillset biglabel"><b>Additional Programs</b></div>
+            <div class="addprog skillset">
+                <li>Unity</li>
+                <li>Adobe Premiere</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Indesign</li>
+                <li>Adobe After Effects</li>
+                <li>Microsoft Word</li>
+                <li>Microsoft Excel</li>
+                <!-- <li><i class="icon-unity"></i></li> -->
+            </div>
+            <br>
+            <div class="mb-0 skillset biglabel"><b>Other</b></div>
+            <div class="addprog skillset">
+                <li>Cantonese (Fluent)</li>
+                <li>Mandarin (Conversational)</li>
+            </div>
+        </div>
+
+
+        <hr />
+
+
+        <div id="experience">
+            <div class="resume">
+                <div class="sect"> <b class="hline"> / </b><b> Experience</b></div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <div class="jobs">
+                            <div class="mb-0 biglabel"><b>Full Stack Intern</b></div>
+                            <div class="flex-shrink-0"><span class="text-primary">8.2020 - 10.2020</span></div>
+                        </div>
+                        <div class="subheading mb-3"><i>Copysmith</i></div>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                    Programmed both front end and back end components of WordPress plugin that auto-generates blog posts
+                                </li>
+                                <li>
+                                    Integrated Copysmith API with WordPress interface
+                                </li>
+                                <li>
+                                    Estimated to reach 60% of Copysmith’s customer base with final product
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <div class="jobs">
+                            <div class="mb-0 biglabel"><b>Administrative Intern</b></div>
+                            <div class="flex-shrink-0"><span class="text-primary">07.2019 - 09.2019</span></div>
+
+                        </div>
+                        <div class="subheading mb-3"><i>NYC Department of Social Services</i></div>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                    Assisted in the planning of events and orientations attended by hundreds of employees
+                                </li>
+                                <li>
+                                    Worked on and updated spreadsheets to track data and ensure accurate and easily accessible information
+                                </li>
+                                <li>
+                                    Communicated with co-interns, managers, and other department locations
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr />
+
+        <div id="projects">
+            <div class="sect"> <b class="hline"> / </b><b>Projects</b></div>
+            <div class="container-fluid bg-3 text-center">
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <!-- <a href = "ways_response/"> -->
+                        <img src="assets/smartwheel.png" class="img-responsive" id="smartwheel" style="width:100%" alt="Ways of Seeing Response">
+                        <div id="swmodel" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>Smart Wheel</h3>
+                                <p>A steering wheel cover that gave safety warnings and physical cues for directions. Designed and prototyped by me along with a team of four in my freshman year.
+                                    <br>
+                                    <br> We worked with an Arduino using Arduino C and also built an app that connected to the cover using bluetooth.
+                                    <br>
+                                    <!-- My team presented this project in front of an audience of  -->
+                                </p>
+
+                            </div>
+                        </div>
+                        <p>Smart Wheel</p>
+
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img src="assets/hypersudoku.png" class="img-responsive" id="hyper" style="width:100%" alt="Introducing the Russo Brothers">
+                        <div id="hsmodal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3> Hyper Sudoku (Python) </h3>
+                                <p>
+                                    A program coded in Python that solves a hypersudoku puzzle after you input it. It uses forward-checking after the puzzle is inputted and then uses mrv and degree heurisitcs to solve.
+                                    <br>
+                                    <br> It outputs the completed puzzle.
+                                </p>
+                            </div>
+                        </div>
+                        <p> Hyper Sudoku (Python) </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/cipher.png" class="img-responsive" id="cipher" style="width:100%" alt="Squirrel Poem">
+                        <div id="ciphermodal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>Cryptanalysis Cipher</h3>
+                                <p> A program coded in C++ that takes in an encrypted message and tries to decrypt it. It uses permutations from a semi-known knowledge base.
+                                    <br>
+                                    <br> It outputs the decrypted message or nothing.
+                                </p>
+                            </div>
+                        </div>
+                        <p> Cryptanalysis Cipher </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container-fluid bg-3 text-center">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="assets/clicker.png" class="img-responsive" id="clicker" style="width:100%" alt="Tim Berners Lee Response">
+                        <div id="clickermodal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>Clicker Game</h3>
+                                <p> A game created in Unity. I created this for a friend's birthday. It contains audio clips and new objects once you reach a certain benchmark in the clicking.
+                                    <br>
+                                    <br> It is also possible to save the game to continue for another time.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p> Clicker Game (Unity) </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/care.png" class="img-responsive" id="care" style="width:100%" alt="A Lot of Poetry">
+                        <div id="caremodal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>Care International App</h3>
+                                <p> An mobile app I worked on using Google Firebase and React Native that aimed to connect CSOs with Youth and Women Iniatives in Yemen.. I worked mostly on the authentication and sign in portion.
+                                    <br>
+                                    <br> It only allows you to proceed to the rest of the app after you finish filling out all of the required information. So even if you log out, when you come back on, you have to fill it out.
+                                    <br>
+                                    <br> Followed the vision of the designers to create a visually pleasing application.
+
+                                </p>
+                            </div>
+                        </div>
+                        <p> Care International </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/poetry.png" class="img-responsive" id="poetry" style="width:100%" alt="Soundboard">
+                        <div id="pmodal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>Poetry Website</h3>
+                                <p> A website created using only HTML and CSS. It displays a lot of the poetry I have written for my poetry class.
+                                    <br>
+                                    <br> When I have the time, I might update it to have more poems and use javascript.
+                                </p>
+                            </div>
+                        </div>
+                        <p>Poetry </p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="container-fluid bg-3 text-center">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="assets/movpic.png" class="img-responsive" id="movpic" style="width:100%" alt="Squirrel Poem">
+                        <div id="movmodal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3> Harry Potter Pictures (Kpop Edition) </h3>
+                                <p> A app I made for a friend using Unity and Vuforia. After downloading it onto your phone, if you put the camera over a picture, the picture will start playing a video.
+                                    <br>
+                                    <br> It's essentially printing a video, like the pictures in Harry Potter.
+                                </p>
+                            </div>
+                        </div>
+                        <p> Harry Potter Pictures </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="assets/mixedReality.png" class="img-responsive" id="reality" style="width:100%" alt="A Lot of Poetry">
+                        <div id="realmodal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>Mixed Reality VIP</h3>
+                                <p> For a semester, I worked on the Mixed Reality VIP team. The purpose was to create VR or AR to create a laboratory experience for remote students.
+                                    <br>
+                                    <br> I used Unity to overlay 3D images over existing images, the idea being that if you have a small cardboard box and you use the application, you would see the laboratory equiptment.
+                                </p>
+                            </div>
+                        </div>
+                        <p> Mixed Reality VIP </p>
+                    </div>
+                    <!-- <div class="col-sm-4" id = "xx"> 
+                        <a href = "https://ns4185.github.io/button/index.html">
+                            <img src="assets/poetry.png" class="img-responsive" style="width:100%" alt="Soundboard">
+                            <p>Soundboard (Intro to JS pt. 1) </a> <br> [11.2.2020] </p>
+                        </a>
+                    </div> -->
+                </div>
+            </div><br>
+
+        </div>
+
+        <hr />
+        <div id="contactform">
+            <div class="sect"> <b class="hline"> / </b><b>Contact</b></div>
+            <div class="actualcontact">
+                <form class="contactme">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" id="fname" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="message">Message</label>
+                        <input type="text" class="form-control" id="message" placeholder="Hi! What's up">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="emailbtn">Send Email</button>
+                    <div id="btnmodal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h3>Thank You!</h3>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+        <div id="contact">
+            <div class="socials">
+                <a href="https://github.com/Michie740"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/michelle-y-64b824131/"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="me">
                 Michelle Yang 2020
-            </div>        
+            </div>
         </div>
     </div>
-    <div class = "assist">
-        <button> Larger Text </button>
-        <button> Darker Color</button>
+    <div class="assistMe" id="assist">
+        <div class="texttip">
+            <i class="fa fa-text-height text"></i>
+            <span class="toggleText">Toggle Text Size</span>
+        </div>
+        <div class="colortip">
+            <i class="fa fa-tint color"></i>
+            <span class="toggleDark">Toggle Dark Mode</span>
+        </div>
+        <div class="painttip">
+            <div class="justpaint">
+                <i class="fa fa-paint-brush paint" id="paint"></i>
+                <span class="toggleTheme">Toggle Theme Color</span>
+            </div>
+
+            <div id="themebtn" class="modal2">
+                <span>Theme</span>
+                <div class="colors">
+                    <div class="blue"></div>
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                    <div class="green"></div>
+                    <div class="mustard"></div>
+                    <div class="gray"></div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src = "myscript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <script type="text/javascript" src="js/intro.js"></script>
+
 </body>
+
 </html>

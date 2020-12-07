@@ -1,33 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="theme.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    </head>
-  <body>
-    <nav>
-      <div class = "topbar">
-          <h4>Michelle Yang</h4>
-      </div>
-      <ul class = "links">
-          <li><a href = "index.html#about">About</a></li>
-          <li><a href = "index.html#projects">Projects</a></li>
-          <li><a href = "index.html#experience">Experience</a></li>
-          <li><a href = "./">Activites</a></li>
-          <li><a href = "index.html#contact">Contact</a></li>
-      </ul>
-      <div class = "burger">
-          <div class = "line1"></div>
-          <div class = "line2"></div>
-          <div class = "line3"></div>
-      </div>
-  </nav>
-  <div class = "morecontent">
-    Poems, Dancing, Pictures, etc
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src = "myscript.js"></script>
-  </body>
-</html> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/font-mfizz-2.4.1/font-mfizz.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <nav class="mynav">
+        <div class="topbar">
+            <h4 id="top">Michelle Yang</h4>
+        </div>
+        <ul class="links linksblue">
+            <li><a href="./">Home</a></li>
+            <li id="dancescroll">Dance</li>
+            <li id="poetryscroll">Poetry</li>
+            <li id="picsroll">Pictures</li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="morecontent">
+        <div id="intro">
+            <h2>I Like To:</h2>
+
+        </div>
+        <hr/>
+        <div class="sect"> <b class="hline"> / </b><b>Dance</b></div>
+
+        <div class="dancing">
+            <iframe src="https://www.youtube.com/embed/HtdNlt823Jw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+            <iframe src="https://www.youtube.com/embed/CKxgvbLLXl8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+            <iframe src="https://www.youtube.com/embed/7vRa1NglUbY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+            <iframe src="https://www.youtube.com/embed/9OEPHe0qR9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+            <iframe src="https://www.youtube.com/embed/QaGvLlkLX6U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+        <hr/>
+        <div class="sect"> <b class="hline"> / </b><b>Write Poetry</b></div>
+        <div class="poetry">
+
+        </div>
+        <hr/>
+        <div class="sect"> <b class="hline"> / </b><b>Take Pictures</b></div>
+        <div class="pictures">
+
+        </div>
+
+    </div>
+    <div id="contact">
+        <div class="socials">
+            <a href="https://github.com/Michie740"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/michelle-y-64b824131/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="me">
+            Michelle Yang 2020
+        </div>
+    </div>
+
+
+
+    <div class="assistMe" id="assist">
+        <div class="texttip">
+            <i class="fa fa-text-height text"></i>
+            <span class="toggleText">Toggle Text Size</span>
+        </div>
+        <div class="colortip">
+            <i class="fa fa-tint color"></i>
+            <span class="toggleDark">Toggle Dark Mode</span>
+        </div>
+        <div class="painttip">
+            <div class="justpaint">
+                <i class="fa fa-paint-brush paint" id="paint"></i>
+                <span class="toggleTheme">Toggle Theme Color</span>
+            </div>
+
+            <div id="themebtn" class="modal2">
+                <span>Theme</span>
+                <div class="colors">
+                    <div class="blue"></div>
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                    <div class="green"></div>
+                    <div class="mustard"></div>
+                    <div class="gray"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/myscript2.js"></script>
+    <script src="js/like.js"></script>
+
+</body>
+
+
+
+
+</html>
