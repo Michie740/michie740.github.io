@@ -3,7 +3,7 @@ const navSlide = () => {
     const nav = document.querySelector('.links');
     const links = document.querySelectorAll('.links li');
 
-
+    console.log('slide');
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
 
@@ -182,14 +182,14 @@ $(document).ready(function() {
     })
 
     $("#top").click(function() {
-        $("html, body").animate({ scrollTop: $("body").offset().top }, 500);
+        $("html, body").animate({ scrollTop: $(".body").offset().top }, 500);
     });
     $("#dancescroll").click(function() {
         $("html, body").animate({ scrollTop: $(".dancing").offset().top - 100 }, 500);
     });
 
     $("#poetryscroll").click(function() {
-        $("html, body").animate({ scrollTop: $(".poetry").offset().top - 100 }, 500, 'swing');
+        $("html, body").animate({ scrollTop: $(".poetry").offset().top - 100 }, 500);
     });
 
     $("#picsroll").click(function() {
