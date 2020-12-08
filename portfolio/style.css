@@ -39,10 +39,17 @@ body {
 }
 
 .links {
-    display: flex;
-    align-items: center;
     width: 40%;
+    /* border: 1px black solid; */
+}
+
+.halfit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* width: 40%; */
     justify-content: space-around;
+    /* border: 1px blue solid; */
     padding-top: 1vh;
 }
 
