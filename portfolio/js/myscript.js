@@ -1,4 +1,4 @@
-// calls unnamed function that does this
+//burger slider
 // source = Responsive Navigation Bar Tutorial - Dev Ed
 const navSlide = () => {
     const burger = document.querySelector('.burger');
@@ -39,6 +39,7 @@ var modalhelper = (modal, btn, span) => {
     })
 }
 
+//for the themecolors
 var colorModalHelp = (modal, btn) => {
     var bool = true;
     btn.addEventListener('click', () => {
@@ -51,6 +52,7 @@ var colorModalHelp = (modal, btn) => {
     })
 }
 
+//holss all the things for the helper
 var modelFunc = () => {
     //smartwheel
     // Get the modal
@@ -130,6 +132,7 @@ var modelFunc = () => {
 
 }
 
+//the hovertext
 var hoverelem = () => {
     var elem = document.querySelector("#assist");
     var help = document.querySelector("#assist .help");
@@ -168,7 +171,7 @@ var hoverelem = () => {
 }
 
 
-
+//evrything happesn on ready
 $(document).ready(function() {
     var textsize = true;
     var windowcolor = true;
@@ -177,6 +180,7 @@ $(document).ready(function() {
     modelFunc();
     // hoverelem();
 
+    //the scroll function
     $("#top").click(function() {
         $("html, body").animate({ scrollTop: $(".content").offset().top }, 500);
     });
@@ -206,6 +210,7 @@ $(document).ready(function() {
     });
 
 
+    //the text assist
 
     $('.text').click(function() {
         if (textsize) {
@@ -236,6 +241,7 @@ $(document).ready(function() {
         textsize = !textsize;
     })
 
+    //dark mode assist
     $('.color').click(function() {
         console.log('here');
         if (windowcolor) {
@@ -271,7 +277,7 @@ $(document).ready(function() {
         windowcolor = !windowcolor;
     })
 
-
+    //theme color changes
     var blue = "rgb(72, 185, 255)";
     var pink = "#f3629a";
     var purple = "rgb(170, 86, 248)";
@@ -369,7 +375,7 @@ $(document).ready(function() {
     //     $(this).animate({width:'35px'}, 500);
     // }).trigger('mouseleave');
 
-
+    //header changes sizes
     $(window).on('scroll', function() {
         if (Math.round($(window).scrollTop()) >= 70) {
             $(".topbar").css("padding", "2vh");

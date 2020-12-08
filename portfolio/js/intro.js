@@ -1,4 +1,5 @@
 //ottomated github
+//spells out name
 let header = document.querySelector('#intro h2');
 let anim = [
     { t: "_", ms: 200 },
@@ -33,6 +34,7 @@ let anim = [
     { t: "Hi I'm Michelle!", ms: 200 },
 ];
 
+//steps 
 let stepDenominator = 1;
 if (window.localStorage.stepDenominator)
     stepDenominator = window.localStorage.stepDenominator;
@@ -42,6 +44,7 @@ let update = () => {
     header.innerText = step.t;
     i++;
 
+    //time to step
     if (i < anim.length)
         setTimeout(update, step.ms / stepDenominator);
     else {
