@@ -56,13 +56,17 @@ $(document).ready(function() {
             $(".assistMe").css("backgroundColor", "#1d2a37");
             $(".assistMe i").css("color", "rgb(240, 240, 240)");
             $(".assistMe").css("transition", "0.7s");
+            $(".poetry a").css("color", "white");
+            $(".poetry").css("transition", "0.7s");
         } else {
             $("body").css("backgroundColor", "white");
             $("body").css("color", "#141d26");
-            $("body").css("transition", "0.7s");
+            $("body").css("transition", "0.3s");
             $(".assistMe").css("backgroundColor", "rgb(240, 240, 240)");
             $(".assistMe i").css("color", "#141d26");
             $(".assistMe").css("transition", "0.7s");
+            $(".poetry a").css("color", "#141d26");
+            $(".poetry").css("transition", "0.7s");
 
 
         }
