@@ -60,10 +60,7 @@ var modelFunc = () => {
     // Get the <span> element that closes the modal
     var span1 = document.querySelectorAll(".close")[0];
 
-    // clicker
-    var modal2 = document.querySelector("#clickermodal");
-    var btn2 = document.querySelector("#clicker");
-    var span2 = document.querySelectorAll(".close")[3];
+
 
     // hypersudoku
     var modal3 = document.querySelector("#hsmodal");
@@ -75,15 +72,21 @@ var modelFunc = () => {
     var btn4 = document.querySelector("#cipher");
     var span4 = document.querySelectorAll(".close")[2];
 
+    //slidingpuzzle
+    var modal11 = document.querySelector("#slidemodal");
+    var btn11 = document.querySelector("#slide");
+    var span11 = document.querySelectorAll(".close")[3];
+
+    // clicker
+    var modal2 = document.querySelector("#clickermodal");
+    var btn2 = document.querySelector("#clicker");
+    var span2 = document.querySelectorAll(".close")[4];
+
     //care 
     var modal5 = document.querySelector("#caremodal");
     var btn5 = document.querySelector("#care");
-    var span5 = document.querySelectorAll(".close")[4];
+    var span5 = document.querySelectorAll(".close")[5];
 
-    //poetry
-    var modal6 = document.querySelector("#pmodal");
-    var btn6 = document.querySelector("#poetry");
-    var span6 = document.querySelectorAll(".close")[5];
 
     //harrypotter
     var modal7 = document.querySelector("#movmodal");
@@ -95,14 +98,23 @@ var modelFunc = () => {
     var btn8 = document.querySelector("#reality");
     var span8 = document.querySelectorAll(".close")[7];
 
+    //poetry
+    var modal6 = document.querySelector("#pmodal");
+    var btn6 = document.querySelector("#poetry");
+    var span6 = document.querySelectorAll(".close")[8];
+
+
     //email
     var modal9 = document.querySelector("#btnmodal");
     var btn9 = document.querySelector("#emailbtn");
-    var span9 = document.querySelectorAll(".close")[8];
+    var span9 = document.querySelectorAll(".close")[9];
 
     //toggle theme
     var modal10 = document.querySelector("#themebtn");
     var btn10 = document.querySelector("#paint");
+
+
+
 
     modalhelper(modal1, btn1, span1);
     modalhelper(modal2, btn2, span2);
@@ -113,6 +125,7 @@ var modelFunc = () => {
     modalhelper(modal7, btn7, span7);
     modalhelper(modal8, btn8, span8);
     modalhelper(modal9, btn9, span9);
+    modalhelper(modal11, btn11, span11);
     colorModalHelp(modal10, btn10);
 
 }
@@ -168,6 +181,10 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: $(".content").offset().top }, 500);
     });
 
+    $(".arrow").click(function() {
+        $("html, body").animate({ scrollTop: $(".content").offset().top }, 500);
+    });
+
     $("#aboutscroll").click(function() {
         $("html, body").animate({ scrollTop: $("#allabout").offset().top - 80 }, 500, 'swing');
     });
@@ -188,6 +205,8 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: $("#contactform").offset().top - 80 }, 500);
     });
 
+
+
     $('.text').click(function() {
         if (textsize) {
             $("body").css("fontSize", "large");
@@ -198,6 +217,8 @@ $(document).ready(function() {
             $(".edu").css("transition", "0.3s");
             $(".sect").css("fontSize", "36px");
             $(".sect").css("transition", "0.3s");
+            $(".linked").css("fontSize", "medium");
+            $(".linked").css("transition", "0.3s");
 
 
         } else {
@@ -209,6 +230,8 @@ $(document).ready(function() {
             $(".edu").css("transition", "0.3s");
             $(".sect").css("fontSize", "24px");
             $(".sect").css("transition", "0.3s");
+            $(".linked").css("fontSize", "small");
+            $(".linked").css("transition", "0.3s");
         }
         textsize = !textsize;
     })
@@ -252,7 +275,7 @@ $(document).ready(function() {
     var blue = "rgb(72, 185, 255)";
     var pink = "#f3629a";
     var purple = "rgb(170, 86, 248)";
-    var green = "rgb(44, 226, 150)";
+    var green = "#24c984";
     var yellow = "rgb(209, 172, 5)";
     var grey = "rgb(95, 95, 95)";
     var array = ["linksblue", "linkspinks", "linkspurp", "linksgreen", "linksyellow", "linksgrey"];

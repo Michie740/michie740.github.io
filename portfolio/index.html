@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/font-mfizz-2.4.1/font-mfizz.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+    <link rel="shortcut icon" href="assets/fav/favicon-32x32.png" />
 
     <title>Michelle Yang</title>
 </head>
@@ -22,12 +22,11 @@
                 <h4 id="top">Michelle Yang</h4>
             </div>
             <ul class="links linksblue">
-                <li id="aboutscroll">About</li>
-                <li id="skillscroll">Skills</li>
-                <li id="exscroll">Experience</li>
-                <li id="projscroll">Projects</li>
-                <li id="contactscroll">Contact</li>
-
+                <div class="linked" id="aboutscroll">About</div>
+                <div class="linked id=" skillscroll ">Skills</div>
+                <div class="linked id="exscroll">Experience</div>
+                <div class="linked id=" projscroll ">Projects</div>
+                <div class="linked id="contactscroll">Contact</div>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -240,7 +239,23 @@
             </div>
             <br>
             <div class="container-fluid bg-3 text-center">
+
                 <div class="row">
+                    <div class="col-sm-4">
+                        <img src="assets/slidingpuzzle.png" class="img-responsive" id="slide" style="width:100%" alt="A Lot of Poetry">
+                        <div id="slidemodal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>MSliding Puzzle Problem</h3>
+                                <p> A program coded in C++ that uses A* search. An file containing the initial board and goal board is inputted. The program finds the optimal way to get to the goal board switching tiles only with the blank space, represented
+                                    by a zero.
+                                    <br>
+                                    <br> It outputs the level the solution is found, how many nodes are created, the direction the blank tile is moved as well as the path cost of each node/step of the solution.
+                                </p>
+                            </div>
+                        </div>
+                        <p> Sliding Puzzle Problem </p>
+                    </div>
                     <div class="col-sm-4">
                         <img src="assets/clicker.png" class="img-responsive" id="clicker" style="width:100%" alt="Tim Berners Lee Response">
                         <div id="clickermodal" class="modal">
@@ -273,20 +288,7 @@
                         </div>
                         <p> Care International </p>
                     </div>
-                    <div class="col-sm-4">
-                        <img src="assets/poetry.png" class="img-responsive" id="poetry" style="width:100%" alt="Soundboard">
-                        <div id="pmodal" class="modal">
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <h3>Poetry Website</h3>
-                                <p> A website created using only HTML and CSS. It displays a lot of the poetry I have written for my poetry class.
-                                    <br>
-                                    <br> When I have the time, I might update it to have more poems and use javascript.
-                                </p>
-                            </div>
-                        </div>
-                        <p>Poetry </p>
-                    </div>
+
                 </div>
             </div><br>
             <div class="container-fluid bg-3 text-center">
@@ -319,92 +321,104 @@
                         </div>
                         <p> Mixed Reality VIP </p>
                     </div>
-                    <!-- <div class="col-sm-4" id = "xx"> 
-                    <a href = "https://ns4185.github.io/button/index.html">
-                        <img src="assets/poetry.png" class="img-responsive" style="width:100%" alt="Soundboard">
-                        <p>Soundboard (Intro to JS pt. 1) </a> <br> [11.2.2020] </p>
-                    </a>
-                </div> -->
-                </div>
-            </div><br>
-
-        </div>
-
-        <hr />
-        <div id="contactform">
-            <div class="sect"> <b class="hline"> / </b><b>Contact</b></div>
-            <div class="actualcontact">
-                <form class="contactme">
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="fname">First Name</label>
-                            <input type="text" class="form-control" id="fname" placeholder="First Name">
+                    <div class="col-sm-4">
+                        <img src="assets/poetry.png" class="img-responsive" id="poetry" style="width:100%" alt="Soundboard">
+                        <div id="pmodal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>Poetry Website</h3>
+                                <p> A website created using only HTML and CSS. It displays a lot of the poetry I have written for my poetry class.
+                                    <br>
+                                    <br> When I have the time, I might update it to have more poems and use javascript.
+                                </p>
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <label for="lname">Last Name</label>
-                            <input type="text" class="form-control" id="lname" placeholder="Last Name">
-                        </div>
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="email">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email Address">
-                    </div>
-                    <div class="form-group col-md-12">
-                        <label for="message">Message</label>
-                        <input type="text" class="form-control" id="message" placeholder="Hi! What's up">
-                    </div>
-                    <button type="button" class="btn btn-primary" id="emailbtn">Send Email</button>
-                    <div id="btnmodal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h3>Thank You!</h3>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-
-        </div>
-
-        <div id="contact">
-            <div class="socials">
-                <a href="https://github.com/Michie740"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/michelle-y-64b824131/"><i class="fa fa-linkedin"></i></a>
-            </div>
-            <div class="me">
-                Michelle Yang 2020
-            </div>
-        </div>
-        <div class="assistMe" id="assist">
-            <div class="texttip">
-                <i class="fa fa-text-height text"></i>
-                <span class="toggleText">Toggle Text Size</span>
-            </div>
-            <div class="colortip">
-                <i class="fa fa-tint color"></i>
-                <span class="toggleDark">Toggle Dark Mode</span>
-            </div>
-            <div class="painttip">
-                <div class="justpaint">
-                    <i class="fa fa-paint-brush paint" id="paint"></i>
-                    <span class="toggleTheme">Toggle Theme Color</span>
-                </div>
-
-                <div id="themebtn" class="modal2">
-                    <span>Theme</span>
-                    <div class="colors">
-                        <div class="blue"></div>
-                        <div class="pink"></div>
-                        <div class="purple"></div>
-                        <div class="green"></div>
-                        <div class="mustard"></div>
-                        <div class="gray"></div>
+                        <p>Poetry </p>
                     </div>
                 </div>
             </div>
+        </div><br>
 
+    </div>
 
+    <hr />
+    <div id="contactform">
+        <div class="sect"> <b class="hline"> / </b><b>Contact</b></div>
+        <div class="actualcontact">
+            <form class="contactme">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="fname">First Name</label>
+                        <input type="text" class="form-control" id="fname" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lname">Last Name</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="message">Message</label>
+                    <input type="text" class="form-control" id="message" placeholder="Hi! What's up">
+                </div>
+                <button type="button" class="btn btn-primary" id="emailbtn">Send Email</button>
+                <div id="btnmodal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Thank You!</h3>
+                    </div>
+                </div>
+            </form>
         </div>
+
+
+    </div>
+
+    <div id="contact">
+        <div class="socials">
+            <a href="https://github.com/Michie740"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/michelle-y-64b824131/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="me">
+            Michelle Yang 2020
+        </div>
+    </div>
+    <div class="assistMe" id="assist">
+        <div class="texttip">
+            <i class="fa fa-text-height text"></i>
+            <span class="toggleText">Toggle Text Size</span>
+        </div>
+        <div class="colortip">
+            <i class="fa fa-tint color"></i>
+            <span class="toggleDark">Toggle Dark Mode</span>
+        </div>
+        <div class="painttip">
+            <div class="justpaint">
+                <i class="fa fa-paint-brush paint" id="paint"></i>
+                <span class="toggleTheme">Toggle Theme Color</span>
+            </div>
+
+            <div id="themebtn" class="modal2">
+                <span>Theme</span>
+                <div class="colors">
+                    <div class="blue"></div>
+                    <div class="pink"></div>
+                    <div class="purple"></div>
+                    <div class="green"></div>
+                    <div class="mustard"></div>
+                    <div class="gray"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="backtotop">
+        <i class="fa fa-arrow-up arrow"></i>
+    </div>
 
     </div>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

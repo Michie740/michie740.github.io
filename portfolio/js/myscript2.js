@@ -79,6 +79,8 @@ $(document).ready(function() {
             $(".edu").css("transition", "0.3s");
             $(".sect").css("fontSize", "36px");
             $(".sect").css("transition", "0.3s");
+            $(".linked").css("fontSize", "medium");
+            $(".linked").css("transition", "0.3s");
 
 
         } else {
@@ -90,6 +92,8 @@ $(document).ready(function() {
             $(".edu").css("transition", "0.3s");
             $(".sect").css("fontSize", "24px");
             $(".sect").css("transition", "0.3s");
+            $(".linked").css("fontSize", "small");
+            $(".linked").css("transition", "0.3s");
         }
         textsize = !textsize;
     })
@@ -98,7 +102,7 @@ $(document).ready(function() {
     var blue = "rgb(72, 185, 255)";
     var pink = "#f3629a";
     var purple = "rgb(170, 86, 248)";
-    var green = "rgb(44, 226, 150)";
+    var green = "#24c984";
     var yellow = "rgb(209, 172, 5)";
     var grey = "rgb(95, 95, 95)";
     var array = ["linksblue", "linkspinks", "linkspurp", "linksgreen", "linksyellow", "linksgrey"];
@@ -184,6 +188,11 @@ $(document).ready(function() {
     $("#top").click(function() {
         $("html, body").animate({ scrollTop: $(".body").offset().top }, 500);
     });
+
+    $(".arrow").click(function() {
+        $("html, body").animate({ scrollTop: $(".content").offset().top }, 500);
+    });
+
     $("#dancescroll").click(function() {
         $("html, body").animate({ scrollTop: $(".dancing").offset().top - 100 }, 500);
     });
@@ -192,8 +201,8 @@ $(document).ready(function() {
         $("html, body").animate({ scrollTop: $(".poetry").offset().top - 100 }, 500);
     });
 
-    $("#picsroll").click(function() {
-        $("html, body").animate({ scrollTop: $(".pictures").offset().top - 100 }, 500);
+    $("#musicscroll").click(function() {
+        $("html, body").animate({ scrollTop: $(".music").offset().top - 100 }, 500);
     });
 
 

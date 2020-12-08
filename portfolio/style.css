@@ -31,21 +31,25 @@ body {
     color: rgb(252, 241, 241);
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: large;
+    /* font-size: x-small; */
     padding: 7vh;
+    /* border: 1px purple solid; */
+    display: flex;
+    justify-content: center;
 }
 
 .links {
     display: flex;
+    align-items: center;
     width: 40%;
     justify-content: space-around;
+    padding-top: 1vh;
 }
 
-.links li {
-    list-style: none;
+.linked {
     color: rgb(252, 241, 241);
     letter-spacing: 3px;
-    font-size: smaller;
+    /* font-size: small; */
     text-decoration: none;
     cursor: pointer;
 }
@@ -79,14 +83,15 @@ body {
     .links {
         position: fixed;
         right: 0px;
-        height: 90vh;
-        top: 10vh;
+        height: 97vh;
+        top: 8vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 30%;
         transform: translateX(100%);
         transition: transform 0.4s ease-in;
+        z-index: -4;
     }
     .linksblue {
         background-color: rgb(72, 185, 255);
@@ -101,7 +106,7 @@ body {
         transition: 0.5s;
     }
     .linksgreen {
-        background-color: rgb(44, 226, 150);
+        background-color: #24c984;
         transition: 0.5s;
     }
     .linksyellow {
@@ -112,14 +117,19 @@ body {
         background-color: rgb(95, 95, 95);
         transition: 0.5s;
     }
-    .links li {
+    .links div {
         opacity: 0;
+        z-index: 999;
     }
     .burger {
         display: block;
     }
     .mynav {
-        justify-content: space-between;
+        justify-content: column;
+        z-index: 2;
+    }
+    .links a {
+        z-index: 999;
     }
 }
 
@@ -665,6 +675,32 @@ hr {
     color: white;
 }
 
+
+/* .backtotop {
+    position: fixed;
+    bottom: 15vh;
+    right: 2vh;
+    border: 1px gainsboro solid;
+    padding-right: 2px;
+    padding-left: 2px;
+    /* border-radius: 50%; */
+
+
+/* width: 100%; */
+
+
+/* } */
+
+.backtotop i {
+    position: fixed;
+    bottom: 15vh;
+    right: 2vh;
+    font-size: 3rem;
+    color: rgba(238, 237, 237, 0.815);
+    text-shadow: 1px 3px 3px gray;
+    cursor: pointer;
+}
+
 .dancing {
     display: flex;
     flex-direction: column;
@@ -677,6 +713,50 @@ hr {
     height: auto;
     padding: 20px;
 }
+
+.poetry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.poetry a {
+    /* font-size: medium; */
+    padding-top: 5px;
+    font-weight: lighter;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: black
+}
+
+.poetry a:hover {
+    text-shadow: 1px 1px 4px gainsboro;
+    transform: scale(1.01, 1.01);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 4vh;
+}
+
+
+/* .poet {
+    width: 50%;
+    border: 1px black solid;
+}
+
+.poet img {
+    max-height: 100%;
+    max-width: 100%;
+} */
 
 @media screen and (max-width:750px) {
     .moreabout {
