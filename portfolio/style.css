@@ -567,12 +567,14 @@ textarea {
     align-items: center;
     justify-content: center;
     height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .message {
     text-transform: uppercase;
     letter-spacing: 5px;
-    padding-top: 75px;
+    padding-top: 65px;
 }
 
 .honeypot-field {
