@@ -90,6 +90,11 @@
                     <div class="me">
                         <img src="assets/bio.jpg">
                     </div>
+                    <br>
+                    <div class="details">
+                        I'm a junior studying CS at NYU Tandon School of Engineering. In my free time I like to dance, listen to music, and take long walks in the city (no joke)!
+                    </div>
+                    <br>
                 </div>
 
             </div>
@@ -351,23 +356,41 @@
     <div id="contactform">
         <div class="sect"> <b class="hline"> / </b><b>Contact</b></div>
         <div class="actualcontact">
-            <form class="contactme" method="post" action="email.php">
+            <form id="contactme" class="gform" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbzuRKYNETq6hvA9cMmnv-p0BySNsQVdFy75lHAq-LUN_7eedD8d/exec">
+                <div class="form-elements">
+                    <div class="form-group col-md-12">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                        <!-- <span class="email-invalid" style="display:none">EMAIL ADDRESS INVALID</span> -->
 
-                <div class="form-group col-md-12">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Hi! What's up" style="height:150px"></textarea>
+                    </div>
+
+
+
+                    <fieldset class="pure-group honeypot-field">
+                        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+                        <input id="honeypot" type="text" name="honeypot" value="" />
+                    </fieldset>
+
+                    <button class="btn btn-primary" name="submit" id="submit">Send Email</button>
+
                 </div>
-                <div class="form-group col-md-12">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
+
+                <div class="thx" style="display:none;">
+                    <div class="message">Thank You!</div>
                 </div>
-                <div class="form-group col-md-12">
-                    <label for="message">Message</label>
-                    <input type="text" class="form-control" name="message" id="message" placeholder="Hi! What's up" required>
-                </div>
-                <input type="button" class="btn btn-primary" name="submit" id="submit" value="Send Email">
+
             </form>
         </div>
+
 
 
     </div>
@@ -422,6 +445,8 @@
     <script type="text/javascript" src="js/myscript.js"></script>
     <script type="text/javascript" src="js/intro.js"></script>
     <script type="text/javascript" src="js/textchange.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
 
 </body>
 

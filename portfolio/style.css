@@ -285,6 +285,11 @@ hr {
     justify-content: space-evenly;
 }
 
+.details {
+    width: 60%;
+    text-align: center;
+}
+
 .constraint {
     /* text-align: center; */
     display: flex;
@@ -508,18 +513,29 @@ hr {
     padding-bottom: 2vh;
 }
 
-.contactme {
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+#contactme {
     width: 80%;
     border: 4px rgba(0, 0, 0, 0.027) solid;
     padding-bottom: 2vh;
 }
 
-.contactme .btn {
+#contactme .btn {
     background-color: rgb(72, 185, 255);
     border: 0px;
 }
 
-.contactme .btn:hover {
+#contactme .btn:hover {
     background-color: rgb(15, 139, 216);
     transition: .3s;
 }
@@ -544,6 +560,23 @@ hr {
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+.thx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.message {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 75px;
+}
+
+.honeypot-field {
+    display: none;
 }
 
 .socials a {
