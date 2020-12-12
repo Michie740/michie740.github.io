@@ -106,10 +106,10 @@ var modelFunc = () => {
     var span6 = document.querySelectorAll(".close")[8];
 
 
-    //email
-    var modal9 = document.querySelector("#btnmodal");
-    var btn9 = document.querySelector("#emailbtn");
-    var span9 = document.querySelectorAll(".close")[9];
+    // //email
+    // var modal9 = document.querySelector("#btnmodal");
+    // var btn9 = document.querySelector("#emailbtn");
+    // var span9 = document.querySelectorAll(".close")[9];
 
     //toggle theme
     var modal10 = document.querySelector("#themebtn");
@@ -126,7 +126,7 @@ var modelFunc = () => {
     modalhelper(modal6, btn6, span6);
     modalhelper(modal7, btn7, span7);
     modalhelper(modal8, btn8, span8);
-    modalhelper(modal9, btn9, span9);
+    // modalhelper(modal9, btn9, span9);
     modalhelper(modal11, btn11, span11);
     colorModalHelp(modal10, btn10);
 
@@ -216,7 +216,7 @@ $(document).ready(function() {
         if (textsize) {
             $("body").css("fontSize", "large");
             $("body").css("transition", "0.3s");
-            $(".biglabel").css("fontSize", "xx-large");
+            $(".biglabel").css("fontSize", "x-large");
             $(".biglabel").css("transition", "0.3s");
             $(".edu").css("fontSize", "xx-large");
             $(".edu").css("transition", "0.3s");
@@ -224,19 +224,27 @@ $(document).ready(function() {
             $(".sect").css("transition", "0.3s");
             $(".linked").css("fontSize", "medium");
             $(".linked").css("transition", "0.3s");
+            $("#sequence").css("fontSize", "large");
+            $("#sequence").css("transition", "0.3s");
+            $("#michelle").css("fontSize", "38px");
+            $("#michelle").css("transition", "0.3s");
 
 
         } else {
-            $(".biglabel").css("fontSize", "large");
-            $(".biglabel").css("transition", "0.3s");
             $("body").css("fontSize", "small");
             $("body").css("transition", "0.3s");
+            $(".biglabel").css("fontSize", "large");
+            $(".biglabel").css("transition", "0.3s");
             $(".edu").css("fontSize", "x-large");
             $(".edu").css("transition", "0.3s");
             $(".sect").css("fontSize", "24px");
             $(".sect").css("transition", "0.3s");
             $(".linked").css("fontSize", "small");
             $(".linked").css("transition", "0.3s");
+            $("#sequence").css("fontSize", "medium");
+            $("#sequence").css("transition", "0.3s");
+            $("#michelle").css("fontSize", "30px");
+            $("#michelle").css("transition", "0.3s");
         }
         textsize = !textsize;
     })
@@ -257,8 +265,8 @@ $(document).ready(function() {
             $(".assistMe").css("transition", "0.7s");
             $(".text-primary").css("cssText", "color: white !important");
             $(".text-primary").css("transition", "0.7s");
-
-
+            $(".invert").css("filter", "invert(100%)");
+            $(".invert").css("transition", "0.7s");
         } else {
             $("body").css("backgroundColor", "white");
             $("body").css("color", "#141d26");
@@ -272,6 +280,8 @@ $(document).ready(function() {
             $(".assistMe").css("transition", "0.7s");
             $(".text-primary").css("cssText", "color: black!important");
             $(".text-primary").css("transition", "0.7s");
+            $(".invert").css("filter", "invert(0%)");
+            $(".invert").css("transition", "0.7s");
 
         }
         windowcolor = !windowcolor;

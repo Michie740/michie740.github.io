@@ -1,5 +1,5 @@
 //ottomated github
-let header = document.querySelector('#intro h2');
+let header = document.querySelector('#michelle');
 let anim = [
     { t: "_", ms: 200 },
     { t: "I", ms: 200 },

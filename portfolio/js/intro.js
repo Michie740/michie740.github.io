@@ -1,6 +1,6 @@
 //ottomated github
 //spells out name
-let header = document.querySelector('#intro h2');
+let header = document.querySelector('#michelle');
 let anim = [
     { t: "_", ms: 200 },
     { t: "H", ms: 200 },
@@ -32,6 +32,9 @@ let anim = [
     { t: "Hi I'm Michelle", ms: 200 },
     { t: "Hi I'm Michelle_", ms: 200 },
     { t: "Hi I'm Michelle!", ms: 200 },
+    { t: "Hi I'm Michelle!\n", ms: 200 },
+
+
 ];
 
 //steps 

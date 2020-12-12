@@ -85,6 +85,8 @@ $(document).ready(function() {
             $(".sect").css("transition", "0.3s");
             $(".linked").css("fontSize", "medium");
             $(".linked").css("transition", "0.3s");
+            $("#michelle").css("fontSize", "38px");
+            $("#michelle").css("transition", "0.3s");
 
 
         } else {
@@ -98,6 +100,8 @@ $(document).ready(function() {
             $(".sect").css("transition", "0.3s");
             $(".linked").css("fontSize", "small");
             $(".linked").css("transition", "0.3s");
+            $("#michelle").css("fontSize", "30px");
+            $("#michelle").css("transition", "0.3s");
         }
         textsize = !textsize;
     })

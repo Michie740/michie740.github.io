@@ -39,9 +39,10 @@
             </div>
         </nav>
         <div class="content">
+            <div id="bg"></div>
             <div id="intro">
-                <h2>Hi I'm Michelle</h2>
-                <h4>Welcome to my Website!</h4>
+                <div id="michelle">Hi I'm Michelle</div>
+                <div id="sequence"> I'm a: </div>
 
             </div>
         </div>
@@ -110,18 +111,19 @@
             </div>
             <div class="mb-0 skillset biglabel"><b>Additional Programs</b></div>
             <div class="addprog skillset">
-                <li>Unity</li>
-                <li>Adobe Premiere</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe Indesign</li>
-                <li>Adobe After Effects</li>
-                <li>Microsoft Word</li>
-                <li>Microsoft Excel</li>
-                <!-- <li><i class="icon-unity"></i></li> -->
+                <li><i class="icon-unity"></i></li>
+                <li><i class="icon-git"></i></li>
+                <li><img class="invert" src="assets/premiere.png"></li>
+                <li><img class="invert" src="assets/ai.png"></li>
+                <li><img class="invert" src="assets/ae.png"></li>
+                <li><img class="invert" src="assets/id.png"></li>
+                <li><img class="invert" src="assets/word.png"></li>
+                <li><img class="invert" src="assets/excel.png"></li>
+
             </div>
             <br>
             <div class="mb-0 skillset biglabel"><b>Other</b></div>
-            <div class="addprog skillset">
+            <div class="other skillset">
                 <li>Cantonese (Fluent)</li>
                 <li>Mandarin (Conversational)</li>
             </div>
@@ -161,7 +163,7 @@
                     <div class="flex-grow-1">
                         <div class="jobs">
                             <div class="mb-0 biglabel"><b>Administrative Intern</b></div>
-                            <div class="flex-shrink-0"><span class="text-primary">07.2019 - 09.2019</span></div>
+                            <div class="flex-shrink-0"><span class="text-primary">7.2019 - 9.2019</span></div>
 
                         </div>
                         <div class="subheading mb-3"><i>NYC Department of Social Services</i></div>
@@ -250,7 +252,7 @@
                         <div id="slidemodal" class="modal">
                             <div class="modal-content">
                                 <span class="close">&times;</span>
-                                <h3>MSliding Puzzle Problem</h3>
+                                <h3>Sliding Puzzle Problem</h3>
                                 <p> A program coded in C++ that uses A* search. An file containing the initial board and goal board is inputted. The program finds the optimal way to get to the goal board switching tiles only with the blank space, represented
                                     by a zero.
                                     <br>
@@ -349,32 +351,21 @@
     <div id="contactform">
         <div class="sect"> <b class="hline"> / </b><b>Contact</b></div>
         <div class="actualcontact">
-            <form class="contactme">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="fname">First Name</label>
-                        <input type="text" class="form-control" id="fname" placeholder="First Name">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="lname">Last Name</label>
-                        <input type="text" class="form-control" id="lname" placeholder="Last Name">
-                    </div>
+            <form class="contactme" method="post" action="email.php">
+
+                <div class="form-group col-md-12">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
                 </div>
                 <div class="form-group col-md-12">
                     <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required>
                 </div>
                 <div class="form-group col-md-12">
                     <label for="message">Message</label>
-                    <input type="text" class="form-control" id="message" placeholder="Hi! What's up">
+                    <input type="text" class="form-control" name="message" id="message" placeholder="Hi! What's up" required>
                 </div>
-                <button type="button" class="btn btn-primary" id="emailbtn">Send Email</button>
-                <div id="btnmodal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h3>Thank You!</h3>
-                    </div>
-                </div>
+                <input type="button" class="btn btn-primary" name="submit" id="submit" value="Send Email">
             </form>
         </div>
 
@@ -428,8 +419,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="js/myscript.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
     <script type="text/javascript" src="js/intro.js"></script>
+    <script type="text/javascript" src="js/textchange.js"></script>
 
 </body>
 

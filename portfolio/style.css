@@ -103,6 +103,13 @@ body {
         transition: transform 0.4s ease-in;
         /* z-index: -4; */
     }
+    .mynav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .burger {
+        padding-right: 2vw;
+    }
     .halfit {
         /* height: 97vh; */
         /* border: 1px black solid; */
@@ -211,13 +218,15 @@ h1.top {
 	transform: translateX(-50%);
 } */
 
-#intro h2 {
+#intro #michelle {
     font-weight: bold;
+    font-size: 30px;
 }
 
-#intro h4 {
+#intro #sequence {
     font-weight: 100;
-    letter-spacing: 10px;
+    font-size: medium;
+    letter-spacing: 5px;
     text-align: center;
 }
 
@@ -343,11 +352,15 @@ hr {
     padding-right: 0px;
 }
 
-.lang i:hover {
+.lang i:hover,
+.addprog i:hover,
+.addprog img:hover {
     opacity: 0.8;
+    transition: .3s;
 }
 
-.lang li {
+.lang li,
+.addprog li {
     display: inline-block;
     flex-direction: row;
     justify-content: space-around;
@@ -355,12 +368,23 @@ hr {
 }
 
 .addprog {
-    /* border: 1px black solid; */
+    letter-spacing: 1.7vw;
     opacity: 1;
-    /* padding: 20px; */
+    padding: 20px;
+    padding-right: 0px;
 }
 
-.addprog {
+.addprog li {
+    padding-right: 2.7vw;
+}
+
+.addprog img {
+    width: 4.5rem;
+    height: auto;
+    padding-bottom: 1vh;
+}
+
+.other {
     list-style: none;
 }
 
@@ -497,20 +521,20 @@ hr {
 
 .contactme .btn:hover {
     background-color: rgb(15, 139, 216);
+    transition: .3s;
 }
 
 #contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: rgb(72, 185, 255);
     color: white;
 }
 
 #contact .me {
-    display: flex;
-    align-items: flex-end;
-    text-align: right;
+    text-align: center;
     font-size: x-small;
 }
 
@@ -520,10 +544,6 @@ hr {
     width: 100%;
     display: flex;
     justify-content: space-around;
-}
-
-.socials i {
-    font-size: 2.5rem;
 }
 
 .socials a {
